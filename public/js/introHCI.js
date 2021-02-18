@@ -13,7 +13,7 @@ function initializePage() {
 	$(".likeBtn").click(countLike);
 }
 
-function countLike()
+function countLike(e)
 {
 	e.preventDefault();
 	ga('send', 'event', 'signup', 'click');
