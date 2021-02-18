@@ -5,11 +5,11 @@ var projects = require('../projects.json');
  */
 
 exports.view = function(request, response){
-	data['viewAlt'] = false;
+	projects['viewAlt'] = false;
   	response.render('index', projects);
 };
 
 exports.viewAlt = function(request, response){
-	data['viewAlt'] = true;
+	projects['viewAlt'] = true;
 	response.render('index', projects)
 }
