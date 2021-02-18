@@ -10,4 +10,12 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	$(".likeBtn").click(countLike);
+}
+
+function countLike()
+{
+	e.preventDefault();
+	ga('send', 'event', 'signup', 'click');
+	console.log("Like!");
 }
